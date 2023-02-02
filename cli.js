@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-import moment from "moment-timezone";
-import fetch from "node-fetch";
+
 import minimist from "minimist";
+import fetch from "node-fetch";
+import moment from "moment-timezone";
 
 const args = minimist(process.argv.slice(2))
 
@@ -35,8 +36,8 @@ if (args.h) {
 	process.exit(0);
 }
 
-let lat
-let long
+let lat;
+let long;
 
 if(args.n) {
     lat = args.n;
@@ -88,7 +89,7 @@ let num_days;
 if (days > 1) {
      day_str = "in " + days + " days";
 } else if (days > 1) {
-     dat_str = "today"
+     day_str = "today"
 } else {
     day_str = "tomorrow";
 }
