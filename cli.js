@@ -95,12 +95,12 @@ if (days > 1) {
 }
 
 if (!days) {
-    if (precipitation_hours_data[1] > 0) {
+    if (precip[1] > 0) {
         console.log('You might need your galoshes ' + num_days);
     } else {
         console.log('You will not need your galoshes ' + num_days);
     }
-} else if (precipitation_hours_data[days] > 0) {
+} else if (precip[days] > 0) {
     console.log('You might need your galoshes ' + num_days);
 } else {
     console.log('You will not need your galoshes ' + num_days);
