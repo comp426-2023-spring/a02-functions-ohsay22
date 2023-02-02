@@ -87,21 +87,21 @@ const precip = data.daily.precipitation_hours;
 let num_days;
 
 if (days > 1) {
-     day_str = "in " + days + " days";
+     num_days = "in " + days + " days";
 } else if (days > 1) {
-     day_str = "today"
+     num_days = "today"
 } else {
-    day_str = "tomorrow";
+    num_days = "tomorrow";
 }
 
 if (!days) {
     if (precipitation_hours_data[1] > 0) {
-        console.log('You might need your galoshes ' + day_str);
+        console.log('You might need your galoshes ' + num_days);
     } else {
-        console.log('You will not need your galoshes ' + day_str);
+        console.log('You will not need your galoshes ' + num_days);
     }
 } else if (precipitation_hours_data[days] > 0) {
-    console.log('You might need your galoshes ' + day_str);
+    console.log('You might need your galoshes ' + num_days);
 } else {
-    console.log('You will not need your galoshes ' + day_str);
+    console.log('You will not need your galoshes ' + num_days);
 }
