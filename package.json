@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/comp426-2023-spring/a02-functions-ohsay22#readme"
 }
+ "dependencies": {
+    "minimist": "^1.2.7",
+    "moment-timezone": "^0.5.40",
+    "node-fetch": "^3.3.0"
+  },
   "bin": {
     "galosh.js": "./cli.js"
   },
