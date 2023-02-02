@@ -4,7 +4,7 @@
   "description": "This assignment will help you learn to create an installable Node.js command line utility.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
   "repository": {
     "type": "git",
