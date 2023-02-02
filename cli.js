@@ -64,7 +64,15 @@ if(args.e && args.w) {
     process.exit(0);
 }
 
-const res = await fetch(url + 'latitude=' + `${latitude}` + '&longitude=' + `${longitude}` + '&daily=precip&timezone=' + timezone);
+const res =
+    await fetch(
+    'https://api.open-meteo.com/v1/forecast?latitude='
+    + lat
+    + '&longitude='
+    + long +
+    '&daily=precipitation_hours&timezone='
+    + tz);
+
 const data = await response.json()
 
 if (args.j) {
