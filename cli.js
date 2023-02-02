@@ -65,7 +65,7 @@ if(args.e && args.w) {
     process.exit(0);
 }
 
-const res =
+const response =
     await fetch(
     'https://api.open-meteo.com/v1/forecast?latitude='
     + lat
