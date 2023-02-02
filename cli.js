@@ -17,7 +17,7 @@ if (args.h){
     process.exit(0);
 }
 
-const timezone = moment.tz.guess();
+const timezone;
 if (args.t) {
     timezone = args.t;
 } else {
