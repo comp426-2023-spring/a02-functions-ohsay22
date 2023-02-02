@@ -64,7 +64,7 @@ if(args.e && args.w) {
     process.exit(0);
 }
 
-const res = await fetch(url + 'latitude=' + `${latitude}` + '&longitude=' + `${longitude}` + '&daily=precipitation_hours&timezone=' + timezone);
+const res = await fetch(url + 'latitude=' + `${latitude}` + '&longitude=' + `${longitude}` + '&daily=precip&timezone=' + timezone);
 const data = await response.json()
 
 if (args.j) {
