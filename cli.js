@@ -73,7 +73,7 @@ const res =
     '&daily=precipitation_hours&timezone='
     + timezone);
 
-const data = await response.json()
+const data = await response.json();
 
 if (args.j) {
     console.log(data);
@@ -86,11 +86,11 @@ const precip = data.daily.precipitation_hours;
 let num_days;
 
 if (days > 1) {
-     day_str = "In " + days + " Days";
+     day_str = "in " + days + " days";
 } else if (days > 1) {
-     dat_str = "Today"
+     dat_str = "today"
 } else {
-    day_str = "Tomorrow";
+    day_str = "tomorrow";
 }
 
 if (!days) {
