@@ -71,7 +71,7 @@ const res =
     + '&longitude='
     + long +
     '&daily=precipitation_hours&timezone='
-    + tz);
+    + timezone);
 
 const data = await response.json()
 
