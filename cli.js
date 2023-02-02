@@ -44,11 +44,11 @@ if(args.n) {
 } else if (args.s) {
     lat = -args.s;
 } else {
-    console.log('LATITUDE must be in range');
+    console.log('Latitude must be in range');
 }
 
 if(args.n && args.s) {
-    console.log('Provide only one LATITUDE');
+    console.log('Provide only one Latitude');
     process.exit(0);
 }
 
@@ -57,11 +57,11 @@ if(args.e) {
 } else if (args.w) {
     long = -args.w;
 } else {
-    console.log('LONGITUDE must be in range');
+    console.log('Longitude must be in range');
 }
 
 if(args.e && args.w) {
-    console.log('Provide only one LONGITUDE');
+    console.log('Provide only one Longitude');
     process.exit(0);
 }
 
