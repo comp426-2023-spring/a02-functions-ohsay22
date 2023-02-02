@@ -77,7 +77,7 @@ const precip = data.daily.precipitation_hours;
 
 let num_days;
 
-if (days > 1 0) {
+if (days > 1) {
      day_str = "In " + days + " Days";
 } else if (days > 1) {
      dat_str = "Today"
