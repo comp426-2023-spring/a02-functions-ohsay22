@@ -88,7 +88,7 @@ let num_days;
 
 if (days > 1) {
      num_days = "in " + days + " days";
-} else if (days > 1) {
+} else if (days == 0) {
      num_days = "today"
 } else {
     num_days = "tomorrow";
